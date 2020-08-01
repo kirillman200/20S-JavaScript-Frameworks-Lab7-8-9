@@ -21,6 +21,7 @@ const Login = ({setUser}) => {
 
       if (resp.status === 200) {
         setUser(resp.data.user);
+        sessionStorage.setItem('user', JSON.stringify(resp.data.user));
         toast('You have logged in successfully', {
           type: toast.TYPE.SUCCESS
         });

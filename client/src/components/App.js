@@ -5,7 +5,14 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-   const [user, setUser] = useState(false);
+
+  const getUser = () => {
+    const user = sessionStorage.getItem('user');
+    if (user) return JSON.parse(user);
+    return false;
+  }
+
+   const [user, setUser] = useState(getUser());
 
   return (
     <React.Fragment>

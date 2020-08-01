@@ -38,6 +38,7 @@ const Index = function ({user}) {
       <header>
         <h1>Archive</h1>
       </header>
+      <h5>Haha i added register function</h5>
 
       <hr/>
 

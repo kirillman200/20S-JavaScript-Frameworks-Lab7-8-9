@@ -21,10 +21,6 @@ function Nav ({user}) {
             <Link to="/about" className="nav-link">About</Link>
           </li>
 
-          <li className="nav-item">
-            <Link to="/contact" className="nav-link">Contact</Link>
-          </li>
-
           <li className="nav-item dropdown">
             <a href="" className="nav-link dropdown-toggle" id="blogsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Blogs

@@ -99,7 +99,6 @@ const New = function () {
       </div>
     </Container>
   );
-
 };
 
 export default New;
